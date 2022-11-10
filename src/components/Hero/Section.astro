@@ -1,0 +1,21 @@
+---
+import Avatar from './Avatar.astro';
+import Content from './Content.astro';
+import Download from './Download.astro';
+import Social from './Social.astro';
+---
+
+<section
+  class="relative flex h-full w-full flex-col items-center justify-center gap-16 py-16 md:py-32 lg:py-64"
+>
+  <Avatar class="z-10 h-auto w-[320px] md:w-[400px] xl:absolute" />
+  <div
+    class="flex w-full flex-col justify-between gap-4 sm:flex-row sm:items-center sm:gap-0"
+  >
+    <div class="flex flex-col gap-4">
+      <Content />
+      <Social />
+    </div>
+    <Download />
+  </div>
+</section>

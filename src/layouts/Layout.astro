@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdn.andrescv.dev" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
+    />
+    <meta charset="UTF-8" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="title" content="Andrés Castellanos, Sr. Software Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://andrescv.dev" />
+    <meta
+      property="og:title"
+      content="Andrés Castellanos, Sr. Software Engineer"
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.andrescv.dev/og_image_facebook.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.andrescv.dev/og_image_twitter.jpg"
+    />
+    <meta
+      name="description"
+      content="I am a senior software engineer, passionate about  state-of-the-art technologies. I consider myself highly adaptable and a fast learner with a range of deep technical skills. I love traveling and being exposed to different cultures."
+    />
+    <meta
+      property="og:description"
+      content="I am a senior software engineer, passionate about  state-of-the-art technologies. I consider myself highly adaptable and a fast learner with a range of deep technical skills. I love traveling and being exposed to different cultures."
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="flex min-h-screen flex-col items-center bg-acv-background">
+      <slot />
+    </div>
+    <style is:global>
+      :root {
+        color-scheme: dark;
+      }
+    </style>
+  </body>
+</html>

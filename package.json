@@ -14,7 +14,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier -w ."
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.1.2",
@@ -26,6 +27,7 @@
     "@commitlint/config-conventional": "^17.2.0",
     "husky": "^8.0.2",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.7.0"
+    "prettier-plugin-astro": "^0.7.0",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }
