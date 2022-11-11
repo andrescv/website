@@ -1,19 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  darkMode: 'class',
   theme: {
     extend: {
       animation: {
         wave: 'wave 2.5s infinite',
       },
       backgroundImage: {
-        'acv-linear': 'linear-gradient(95deg, #D24074 0%, #6518B4 100%)',
+        'acv-linear': 'linear-gradient(98.41deg, #4568DC 0%, #B06AB3 100%)',
       },
       colors: {
         acv: {
-          background: '#090E16',
-          purple: '#6518B4',
-          red: '#D24074',
+          black: '#090E16',
+          white: '#FAFAFA',
+          purple: '#6366F1',
         },
       },
       fontFamily: {
@@ -32,7 +33,18 @@ module.exports = {
         },
       },
       maxWidth: {
-        app: '90rem',
+        'sm': '40rem',
+        'md': '48rem',
+        'lg': '64rem',
+        'xl': '80rem',
+        '2xl': '90rem',
+      },
+      screens: {
+        'sm': '40em',
+        'md': '48em',
+        'lg': '64em',
+        'xl': '80em',
+        '2xl': '90em',
       },
     },
   },

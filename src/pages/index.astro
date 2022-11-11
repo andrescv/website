@@ -1,14 +1,26 @@
 ---
-import Hero from '../components/Hero/Section.astro';
+import HeroAvatar from '../components/HeroAvatar.astro';
+import HeroContent from '../components/HeroContent.astro';
+import HeroSocial from '../components/HeroSocial.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="andrescv | Home">
-  <main class="flex w-full flex-col items-center px-8 md:px-16 lg:px-32">
-    <div
-      class="flex w-full max-w-3xl flex-col items-center md:max-w-4xl xl:max-w-app"
-    >
-      <Hero />
+  <main class="flex w-full flex-col items-center px-4 sm:px-8 xl:px-28">
+    <div class="flex w-full flex-col items-center max-w-2xl">
+      <section
+        class="relative flex h-full w-full flex-col items-center justify-center gap-16 py-16 md:py-32 lg:py-64"
+      >
+        <HeroAvatar />
+        <div
+          class="flex w-full flex-col justify-between gap-4 sm:flex-row sm:items-center sm:gap-0"
+        >
+          <div class="flex flex-col gap-4 max-w-[22rem]">
+            <HeroContent />
+            <HeroSocial />
+          </div>
+        </div>
+      </section>
     </div>
   </main>
 </Layout>
